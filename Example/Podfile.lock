@@ -1,0 +1,16 @@
+PODS:
+  - CircularRevealTransition (0.1.0)
+
+DEPENDENCIES:
+  - CircularRevealTransition (from `../`)
+
+EXTERNAL SOURCES:
+  CircularRevealTransition:
+    :path: ../
+
+SPEC CHECKSUMS:
+  CircularRevealTransition: 13a4fbfbf556c06450a5ddb9379f960864e4dfbb
+
+PODFILE CHECKSUM: fe6a3920e01fcd469a800303aa4c21a91860fb53
+
+COCOAPODS: 1.0.1

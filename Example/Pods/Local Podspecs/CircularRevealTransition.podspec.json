@@ -1,0 +1,22 @@
+{
+  "name": "CircularRevealTransition",
+  "version": "0.1.0",
+  "summary": "A short description of CircularRevealTransition.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/kim.lan.bui@gmx.net/CircularRevealTransition",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "kim.lan.bui@gmx.net": "kim.l4n.bui@googlemail.com"
+  },
+  "source": {
+    "git": "https://github.com/kim.lan.bui@gmx.net/CircularRevealTransition.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "CircularRevealTransition/Classes/**/*"
+}

@@ -1,0 +1,6 @@
+framework module CircularRevealTransition {
+  umbrella header "CircularRevealTransition-umbrella.h"
+
+  export *
+  module * { export * }
+}
