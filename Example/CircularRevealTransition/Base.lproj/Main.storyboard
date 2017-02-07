@@ -27,7 +27,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Rcy-t3-l8D" kind="custom" identifier="show" id="SxM-rg-Qdf"/>
+                                    <segue destination="Rcy-t3-l8D" kind="presentation" identifier="show" modalTransitionStyle="crossDissolve" id="SxM-rg-Qdf"/>
                                 </connections>
                             </button>
                         </subviews>

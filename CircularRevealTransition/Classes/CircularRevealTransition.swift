@@ -8,18 +8,18 @@
 
 import UIKit
 
-class CircularRevealTransition : NSObject {
+public class CircularRevealTransition : NSObject {
     
-    enum Mode {
+    public enum Mode {
         case present
         case dismiss
         case pop
     }
     
-    let startingPoint: CGPoint = CGPointZero
-    let duration: NSTimeInterval = 0.5
-    let transitionMode: Mode = .present
-    let color: UIColor = UIColor.whiteColor()
+    public var startingPoint: CGPoint = CGPointZero
+    public var duration: NSTimeInterval = 0.5
+    public var transitionMode: Mode = .present
+    public var color: UIColor = UIColor.whiteColor()
     
     private var transitionView: UIView = UIView()
     

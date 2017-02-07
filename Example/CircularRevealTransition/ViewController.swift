@@ -25,12 +25,17 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let destinationController = segue.destinationViewController
+        destinationController.transitioningDelegate = self
+        destinationController.modalPresentationStyle = UIModalPresentationStyle.FullScreen
+    }
 }
 
 extension ViewController : UIViewControllerTransitioningDelegate {
     func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         transition.transitionMode = .present
-        transition.startingPoint = button.frame.center
+        transition.startingPoint = button.center
         return transition
     }
     
