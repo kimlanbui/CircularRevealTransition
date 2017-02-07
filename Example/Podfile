@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'CircularRevealTransition_Example' do
+  pod 'CircularRevealTransition', :path => '../'
+
+  target 'CircularRevealTransition_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
