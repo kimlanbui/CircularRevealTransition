@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		36C255E7B406BDD5A1A56FEDF0BD230F /* Pods-CircularRevealTransition_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 00016BB224D0B29870935482929549C2 /* Pods-CircularRevealTransition_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		387DAE51BE9BB4DBB6A752B60D7AF225 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		4CDD6D0F1E4A7CCC00A1E29C /* CircularRevealTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDD6D0E1E4A7CCC00A1E29C /* CircularRevealTransition.swift */; };
 		573F45E2A112BA2DEFBD2432D70484DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		739AD385AD9B02A339FA5BF9CAF245B5 /* Pods-CircularRevealTransition_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F74659419E7E332DD0ED0448802A09F /* Pods-CircularRevealTransition_Tests-dummy.m */; };
 		83CA55B821B4ED81693E8FD75E2150EC /* Pods-CircularRevealTransition_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B4BCACEF241ACA67D5530670083BA44C /* Pods-CircularRevealTransition_Example-dummy.m */; };
 		9EABBE7EB28454CB9FB7AAF90FD6B854 /* Pods-CircularRevealTransition_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2407A101833B20740C8FDA87272199FD /* Pods-CircularRevealTransition_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ABC73FC8D510B55DD3B125E557A9636D /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AC4F6DB8770F59A869366C9A594360 /* ReplaceMe.swift */; };
 		D72EC540CEA00928C8A476F163AA9C94 /* CircularRevealTransition-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE7E8A50C4C25A1161BC7A68AA93B30 /* CircularRevealTransition-dummy.m */; };
 		F708A6CA633C267C8DCB53F307FEB194 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		FBCB35C8C62BCC5C3F7BF72989C5D166 /* CircularRevealTransition-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FAD9FE30BE0550300B03F45BA4632D9 /* CircularRevealTransition-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -40,6 +40,7 @@
 		3C8BE486F3C6A9EEB9DC7ED34AAD213E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4146A97DD602D6F6622BFC78C1031595 /* Pods-CircularRevealTransition_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CircularRevealTransition_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		47470172D031C5790E67896CCBF99E3E /* Pods-CircularRevealTransition_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-CircularRevealTransition_Tests.modulemap"; sourceTree = "<group>"; };
+		4CDD6D0E1E4A7CCC00A1E29C /* CircularRevealTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularRevealTransition.swift; sourceTree = "<group>"; };
 		5D6293C4890097C326AF3644E373F2C3 /* Pods_CircularRevealTransition_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CircularRevealTransition_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DEC650F01D7EFD6F137698C8C3E9F3E /* Pods-CircularRevealTransition_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CircularRevealTransition_Example-resources.sh"; sourceTree = "<group>"; };
 		7121E1F54836CD912A3E4EF82C8AAA8E /* CircularRevealTransition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CircularRevealTransition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,7 +49,6 @@
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		94D733AE19EB8D943C0FF64E0CF4578E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94FC594478D73108B9CA1F66006E323A /* Pods-CircularRevealTransition_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CircularRevealTransition_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		A4AC4F6DB8770F59A869366C9A594360 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
 		B4BCACEF241ACA67D5530670083BA44C /* Pods-CircularRevealTransition_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CircularRevealTransition_Example-dummy.m"; sourceTree = "<group>"; };
 		B5E8627C47CF237C16031471B345C3DB /* Pods-CircularRevealTransition_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CircularRevealTransition_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B61F9124E419508558777CFDCCA671C4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -95,7 +95,7 @@
 		2B5FA2C194DA1D1ADAD2E8DA57FE1AFF /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				A4AC4F6DB8770F59A869366C9A594360 /* ReplaceMe.swift */,
+				4CDD6D0E1E4A7CCC00A1E29C /* CircularRevealTransition.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -338,7 +338,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D72EC540CEA00928C8A476F163AA9C94 /* CircularRevealTransition-dummy.m in Sources */,
-				ABC73FC8D510B55DD3B125E557A9636D /* ReplaceMe.swift in Sources */,
+				4CDD6D0F1E4A7CCC00A1E29C /* CircularRevealTransition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
