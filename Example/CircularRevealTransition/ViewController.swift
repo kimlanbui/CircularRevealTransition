@@ -7,8 +7,13 @@
 //
 
 import UIKit
+import CircularRevealTransition
 
 class ViewController: UIViewController {
+    
+    @IBOutlet var button: UIButton!
+    
+    let transition = CircularRevealTransition()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,5 +25,18 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+}
+
+extension ViewController : UIViewControllerTransitioningDelegate {
+    func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        transition.transitionMode = .present
+        transition.startingPoint = button.frame.center
+        return transition
+    }
+    
+    func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        transition.transitionMode = .dismiss
+        return transition
+    }
 }
 
