@@ -19,7 +19,7 @@ class Animator : NSObject, UIViewControllerAnimatedTransitioning {
     }
     
     @objc internal func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
-        return 0.3
+        return 3
     }
     
     @objc internal func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
@@ -31,42 +31,64 @@ class Animator : NSObject, UIViewControllerAnimatedTransitioning {
                 return
         }
         
-        containerView.addSubview(fromViewController.view)
-        containerView.addSubview(toViewController.view)
+        if isExpanding {
+            containerView.addSubview(toViewController.view)
+        }
+        else {
+            containerView.insertSubview(toViewController.view, belowSubview: fromViewController.view)
+        }
+        
         
         let toViewFrame = toViewController.view.frame
         let radius = sqrt(toViewFrame.width * toViewFrame.width + toViewFrame.height * toViewFrame.height)
         
-        let smallPath = UIBezierPath(arcCenter: CGPoint(x: sourceFrame.minX + sourceFrame.width / 2, y: sourceFrame.minY + sourceFrame.height / 2), radius: 1, startAngle: 0, endAngle: 360, clockwise: true)
-        
-        let bigPath = UIBezierPath(arcCenter: CGPoint(x: toViewFrame.width / 2, y: toViewFrame.height / 2), radius: radius / 2, startAngle: 0, endAngle: 360, clockwise: true)
-        
-        let maskPath = isExpanding ? smallPath : bigPath
-        let circlePath = isExpanding ? bigPath : smallPath
+        let startPath = UIBezierPath(arcCenter: CGPoint(x: sourceFrame.minX + sourceFrame.width / 2, y: sourceFrame.minY + sourceFrame.height / 2), radius: 1, startAngle: 0, endAngle: 360, clockwise: true)
+        let endPath = UIBezierPath(arcCenter: CGPoint(x: toViewFrame.width / 2, y: toViewFrame.height / 2), radius: radius / 2, startAngle: 0, endAngle: 360, clockwise: true)
         
         let maskLayer = CAShapeLayer()
-        maskLayer.path = maskPath.CGPath
+        maskLayer.path = startPath.CGPath
         maskLayer.frame = toViewController.view.frame
-        toViewController.view.layer.mask = maskLayer
+        
+        if isExpanding {
+            toViewController.view.layer.mask = maskLayer
+        }
+        else {
+            fromViewController.view.layer.mask = maskLayer
+        }
         
         // create the animation
+        CATransaction.begin()
+        CATransaction.setCompletionBlock({
+            fromViewController.view.removeFromSuperview()
+            transitionContext.completeTransition(!transitionContext.transitionWasCancelled())
+            transitionContext.viewControllerForKey(UITransitionContextFromViewControllerKey)!.view.layer.mask = nil
+            transitionContext.viewControllerForKey(UITransitionContextToViewControllerKey)!.view.layer.mask = nil
+        })
+        
         let pathAnimation = CABasicAnimation(keyPath: "path")
         pathAnimation.delegate = self
-        pathAnimation.fromValue = maskPath.CGPath
-        pathAnimation.toValue = circlePath
+        if isExpanding {
+            pathAnimation.fromValue = startPath.CGPath
+            pathAnimation.toValue = endPath.CGPath
+        }
+        else {
+            pathAnimation.fromValue = endPath.CGPath
+            pathAnimation.toValue = startPath.CGPath
+        }
         pathAnimation.duration = transitionDuration(transitionContext)
-        maskLayer.path = circlePath.CGPath
+        
+        if isExpanding {
+            maskLayer.path = endPath.CGPath
+        }
+        else {
+            maskLayer.path = startPath.CGPath
+        }
+        
         maskLayer.addAnimation(pathAnimation, forKey: "pathAnimation")
         
+        CATransaction.commit()
     }
     
-    internal func animationEnded(transitionCompleted: Bool) {
-        guard let transitionContext = transitionContext else {
-            return
-        }
-        transitionContext.completeTransition(!transitionContext.transitionWasCancelled())
-        transitionContext.viewControllerForKey(UITransitionContextFromViewControllerKey)!.view.layer.mask = nil
-    }
 }
 
 class TransitioningDelegate : NSObject, UIViewControllerTransitioningDelegate {
@@ -108,6 +130,10 @@ class ViewController : UIViewController {
     }
     
     @IBAction func unwindFromView(segue: UIStoryboardSegue) {}
+    
+    deinit {
+        print("remove ViewController")
+    }
 }
 
 class BlueViewController : UIViewController {
@@ -118,6 +144,14 @@ class BlueViewController : UIViewController {
         transitionDelegate = TransitioningDelegate(frame: sender.frame)
         transitioningDelegate = transitionDelegate
         dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
     }
     
 }
