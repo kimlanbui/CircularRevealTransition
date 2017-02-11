@@ -17,7 +17,7 @@ A Swift library to provide a circular reveal transition between view controllers
   s.homepage         = 'https://github.com/kim.lan.bui@gmx.net/CircularRevealTransition'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'kim.l4n.bui@googlemail.com' }
+  s.author           = 'kim.l4n.bui@googlemail.com'
   s.source           = { :git => 'https://github.com/kimlanbui/CircularRevealTransition.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.0'
