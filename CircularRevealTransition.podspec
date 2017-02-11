@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
 A Swift library to provide a circular reveal transition between view controllers.
                        DESC
 
-  s.homepage         = 'https://github.com/kim.lan.bui@gmx.net/CircularRevealTransition'
+  s.homepage         = 'https://github.com/kimlanbui/CircularRevealTransition'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = 'kim.l4n.bui@googlemail.com'
