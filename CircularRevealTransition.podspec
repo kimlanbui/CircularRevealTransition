@@ -8,25 +8,17 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CircularRevealTransition'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of CircularRevealTransition.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
+  s.version          = '1.0.0'
+  s.summary          = 'Provides a circular reveal transition between view controllers.'
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+A Swift library to provide a circular reveal transition between view controllers.
                        DESC
 
   s.homepage         = 'https://github.com/kim.lan.bui@gmx.net/CircularRevealTransition'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'kim.lan.bui@gmx.net' => 'kim.l4n.bui@googlemail.com' }
-  s.source           = { :git => 'https://github.com/kim.lan.bui@gmx.net/CircularRevealTransition.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { 'kim.l4n.bui@googlemail.com' }
+  s.source           = { :git => 'https://github.com/kimlanbui/CircularRevealTransition.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.0'
 
