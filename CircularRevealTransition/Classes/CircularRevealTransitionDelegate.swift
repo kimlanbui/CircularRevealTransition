@@ -8,12 +8,12 @@
 
 import UIKit
 
-public class CircularRevealTransitionDelegate : NSObject {
+open class CircularRevealTransitionDelegate : NSObject {
     
     let sourceFrame : CGRect
-    let duration : NSTimeInterval
+    let duration : TimeInterval
     
-    public init(frame: CGRect, duration: NSTimeInterval = 0.3) {
+    public init(frame: CGRect, duration: TimeInterval = 0.3) {
         self.sourceFrame = frame
         self.duration = duration
     }
@@ -22,11 +22,11 @@ public class CircularRevealTransitionDelegate : NSObject {
 
 extension CircularRevealTransitionDelegate : UIViewControllerTransitioningDelegate {
     
-    public func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    public func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         return CircularRevealTransition(frame: sourceFrame, duration: duration, expanding: true)
     }
     
-    public func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    public func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         return CircularRevealTransition(frame: sourceFrame, duration: duration, expanding: false)
     }
     

@@ -1,5 +1,5 @@
 PODS:
-  - CircularRevealTransition (0.1.0)
+  - CircularRevealTransition (1.0.2)
 
 DEPENDENCIES:
   - CircularRevealTransition (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  CircularRevealTransition: 13a4fbfbf556c06450a5ddb9379f960864e4dfbb
+  CircularRevealTransition: c095165c04233bf77ec97de581de8ee9fa6aef7b
 
 PODFILE CHECKSUM: fe6a3920e01fcd469a800303aa4c21a91860fb53
 

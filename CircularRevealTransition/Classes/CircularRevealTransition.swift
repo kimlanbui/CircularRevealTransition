@@ -8,14 +8,14 @@
 
 import UIKit
 
-public class CircularRevealTransition : NSObject {
+open class CircularRevealTransition : NSObject {
     
     var transitionContext : UIViewControllerContextTransitioning?
     let sourceFrame : CGRect
     let isExpanding : Bool
-    let duration : NSTimeInterval
+    let duration : TimeInterval
     
-    public init(frame: CGRect, duration: NSTimeInterval = 0.3, expanding: Bool = true) {
+    public init(frame: CGRect, duration: TimeInterval = 0.3, expanding: Bool = true) {
         self.sourceFrame = frame
         self.isExpanding = expanding
         self.duration = duration
@@ -25,18 +25,19 @@ public class CircularRevealTransition : NSObject {
 
 extension CircularRevealTransition : UIViewControllerAnimatedTransitioning {
     
-    @objc public func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
+    @objc public func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
         return duration
     }
     
-    @objc public func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
+    @objc public func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
         self.transitionContext = transitionContext
         
-        guard let fromViewController = transitionContext.viewControllerForKey(UITransitionContextFromViewControllerKey),
-            let toViewController = transitionContext.viewControllerForKey(UITransitionContextToViewControllerKey),
-            let containerView = transitionContext.containerView() else {
+        guard let fromViewController = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.from),
+            let toViewController = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.to) else {
                 return
         }
+        
+        let containerView = transitionContext.containerView
         
         if isExpanding {
             containerView.addSubview(toViewController.view)
@@ -53,7 +54,7 @@ extension CircularRevealTransition : UIViewControllerAnimatedTransitioning {
         let endPath = UIBezierPath(arcCenter: CGPoint(x: toViewFrame.width / 2, y: toViewFrame.height / 2), radius: radius / 2, startAngle: 0, endAngle: 360, clockwise: true)
         
         let maskLayer = CAShapeLayer()
-        maskLayer.path = startPath.CGPath
+        maskLayer.path = startPath.cgPath
         maskLayer.frame = toViewController.view.frame
         
         if isExpanding {
@@ -67,27 +68,26 @@ extension CircularRevealTransition : UIViewControllerAnimatedTransitioning {
         CATransaction.begin()
         CATransaction.setCompletionBlock({
             fromViewController.view.removeFromSuperview()
-            transitionContext.completeTransition(!transitionContext.transitionWasCancelled())
-            transitionContext.viewControllerForKey(UITransitionContextFromViewControllerKey)!.view.layer.mask = nil
-            transitionContext.viewControllerForKey(UITransitionContextToViewControllerKey)!.view.layer.mask = nil
+            transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
+            transitionContext.viewController(forKey: UITransitionContextViewControllerKey.from)!.view.layer.mask = nil
+            transitionContext.viewController(forKey: UITransitionContextViewControllerKey.to)!.view.layer.mask = nil
         })
         
         let pathAnimation = CABasicAnimation(keyPath: "path")
-        pathAnimation.delegate = self
-        pathAnimation.duration = transitionDuration(transitionContext)
+        pathAnimation.duration = transitionDuration(using: transitionContext)
         
         if isExpanding {
-            pathAnimation.fromValue = startPath.CGPath
-            pathAnimation.toValue = endPath.CGPath
-            maskLayer.path = endPath.CGPath
+            pathAnimation.fromValue = startPath.cgPath
+            pathAnimation.toValue = endPath.cgPath
+            maskLayer.path = endPath.cgPath
         }
         else {
-            pathAnimation.fromValue = endPath.CGPath
-            pathAnimation.toValue = startPath.CGPath
-            maskLayer.path = startPath.CGPath
+            pathAnimation.fromValue = endPath.cgPath
+            pathAnimation.toValue = startPath.cgPath
+            maskLayer.path = startPath.cgPath
         }
         
-        maskLayer.addAnimation(pathAnimation, forKey: "circularRevealAnimation")
+        maskLayer.add(pathAnimation, forKey: "circularRevealAnimation")
         
         CATransaction.commit()
     }
