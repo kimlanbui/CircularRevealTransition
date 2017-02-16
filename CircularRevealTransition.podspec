@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CircularRevealTransition'
-  s.version          = '1.0.2'
+  s.version          = '2.0.0'
   s.summary          = 'Provides a circular reveal transition between view controllers.'
   s.description      = <<-DESC
 A Swift library to provide a circular reveal transition between view controllers.
@@ -16,11 +16,11 @@ A Swift library to provide a circular reveal transition between view controllers
 
   s.homepage         = 'https://github.com/kimlanbui/CircularRevealTransition'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'Apache License Version 2.0', :file => 'LICENSE' }
+  s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = 'kim.l4n.bui@googlemail.com'
   s.source           = { :git => 'https://github.com/kimlanbui/CircularRevealTransition.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'CircularRevealTransition/Classes/**/*'
   
