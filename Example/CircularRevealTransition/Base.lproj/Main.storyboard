@@ -1,8 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -14,24 +17,24 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oZi-bp-ifK">
-                                <rect key="frame" x="185" y="280" width="230" height="40"/>
+                                <rect key="frame" x="72.5" y="313.5" width="230" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="YaK-I4-n3O"/>
                                     <constraint firstAttribute="width" constant="230" id="oRK-Bz-fYk"/>
                                 </constraints>
                                 <state key="normal" title="Start Circular Reveal Transition">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="Rcy-t3-l8D" kind="presentation" id="NoN-5p-014"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.0027333229980000002" green="0.48598786579999997" blue="0.40903530100000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.0027333229980000002" green="0.48598786579999997" blue="0.40903530100000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="oZi-bp-ifK" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="OJd-mt-tHj"/>
                             <constraint firstItem="oZi-bp-ifK" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Vlg-No-Vbk"/>
@@ -55,17 +58,17 @@
                         <viewControllerLayoutGuide type="bottom" id="kVh-Jl-zv0"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Qed-lK-3SE">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zla-im-WEZ">
-                                <rect key="frame" x="277" y="280" width="46" height="40"/>
+                                <rect key="frame" x="164.5" y="313.5" width="46" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="5qh-pN-gVl"/>
                                     <constraint firstAttribute="width" constant="46" id="kOg-JL-U5u"/>
                                 </constraints>
                                 <state key="normal" title="Back">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="didTapButton:" destination="Rcy-t3-l8D" eventType="touchUpInside" id="4BK-Hf-LWF"/>
@@ -73,7 +76,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.35380278408827126" blue="0.74575836489898983" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.35380278408827126" blue="0.74575836489898983" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Zla-im-WEZ" firstAttribute="centerX" secondItem="Qed-lK-3SE" secondAttribute="centerX" id="SbU-V8-dln"/>
                             <constraint firstItem="Zla-im-WEZ" firstAttribute="centerY" secondItem="Qed-lK-3SE" secondAttribute="centerY" id="gt9-JZ-DeP"/>
