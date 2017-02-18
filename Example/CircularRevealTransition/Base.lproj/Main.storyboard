@@ -93,7 +93,7 @@
         <!--View based-->
         <scene sceneID="nVu-jr-mpK">
             <objects>
-                <viewController id="Xgz-4Q-R5h" sceneMemberID="viewController">
+                <viewController id="Xgz-4Q-R5h" customClass="ViewBasedAnimationController" customModule="CircularRevealTransition_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bDL-bc-J4C"/>
                         <viewControllerLayoutGuide type="bottom" id="05K-tC-IHh"/>
@@ -101,13 +101,57 @@
                     <view key="view" contentMode="scaleToFill" id="0ck-Ed-DMg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZDP-Rh-1Pn">
+                                <rect key="frame" x="37.5" y="233.5" width="300" height="200"/>
+                                <color key="backgroundColor" red="0.0027333229980000002" green="0.48598786579999997" blue="0.40903530100000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="CuT-37-Exq"/>
+                                    <constraint firstAttribute="width" constant="300" id="DzN-E7-C24"/>
+                                </constraints>
+                            </view>
+                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M6h-Nh-SXx">
+                                <rect key="frame" x="37" y="233" width="300" height="200"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="1he-VJ-8ov"/>
+                                    <constraint firstAttribute="width" constant="300" id="PmA-XV-FnF"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="TgN-fv-Eor"/>
+                                    <constraint firstAttribute="height" constant="200" id="cAT-T5-7Tq"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="has-WP-Ujy">
+                                <rect key="frame" x="112" y="144" width="150" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="l9d-Ok-zcK"/>
+                                    <constraint firstAttribute="width" constant="150" id="pAP-SW-dCx"/>
+                                </constraints>
+                                <state key="normal" title="Start Animation"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="Xgz-4Q-R5h" eventType="touchUpInside" id="MgB-SH-7AV"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="M6h-Nh-SXx" firstAttribute="centerY" secondItem="0ck-Ed-DMg" secondAttribute="centerY" id="BmX-b5-eba"/>
+                            <constraint firstItem="ZDP-Rh-1Pn" firstAttribute="centerY" secondItem="0ck-Ed-DMg" secondAttribute="centerY" id="KJi-5g-CCI"/>
+                            <constraint firstItem="M6h-Nh-SXx" firstAttribute="centerX" secondItem="0ck-Ed-DMg" secondAttribute="centerX" id="UKw-0q-oYG"/>
+                            <constraint firstItem="ZDP-Rh-1Pn" firstAttribute="centerX" secondItem="0ck-Ed-DMg" secondAttribute="centerX" id="UjP-Tr-pfY"/>
+                            <constraint firstItem="ZDP-Rh-1Pn" firstAttribute="top" secondItem="has-WP-Ujy" secondAttribute="bottom" constant="49.5" id="Wlq-lt-qzc"/>
+                            <constraint firstItem="has-WP-Ujy" firstAttribute="centerX" secondItem="0ck-Ed-DMg" secondAttribute="centerX" id="XRh-RW-ekw"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="View based" id="M5G-cp-ALB"/>
+                    <connections>
+                        <outlet property="button" destination="has-WP-Ujy" id="ugE-dQ-7Tl"/>
+                        <outlet property="fromView" destination="ZDP-Rh-1Pn" id="m5G-iy-lrD"/>
+                        <outlet property="toView" destination="M6h-Nh-SXx" id="afJ-bJ-DJm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l3k-bm-Gz6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="463" y="711"/>
+            <point key="canvasLocation" x="461.60000000000002" y="710.19490254872574"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="hJL-WQ-hM3">
