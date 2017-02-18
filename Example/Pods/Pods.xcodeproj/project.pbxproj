@@ -7,25 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A0B97A42EBF3A8ECD3BDD8AACDA1EA9 /* CircularRevealTransition-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FAD9FE30BE0550300B03F45BA4632D9 /* CircularRevealTransition-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		36C255E7B406BDD5A1A56FEDF0BD230F /* Pods-CircularRevealTransition_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 00016BB224D0B29870935482929549C2 /* Pods-CircularRevealTransition_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		387DAE51BE9BB4DBB6A752B60D7AF225 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		5113CAED0C8B6D097BBA27524030D69E /* CircularRevealTransition-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE7E8A50C4C25A1161BC7A68AA93B30 /* CircularRevealTransition-dummy.m */; };
-		573F45E2A112BA2DEFBD2432D70484DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		739AD385AD9B02A339FA5BF9CAF245B5 /* Pods-CircularRevealTransition_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F74659419E7E332DD0ED0448802A09F /* Pods-CircularRevealTransition_Tests-dummy.m */; };
-		83CA55B821B4ED81693E8FD75E2150EC /* Pods-CircularRevealTransition_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B4BCACEF241ACA67D5530670083BA44C /* Pods-CircularRevealTransition_Example-dummy.m */; };
-		91EA31ADD4AD91D43397055F590F844D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		9EABBE7EB28454CB9FB7AAF90FD6B854 /* Pods-CircularRevealTransition_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2407A101833B20740C8FDA87272199FD /* Pods-CircularRevealTransition_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B9CD7068FCC9FA67BFBED3CD6C69A67E /* CircularRevealTransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C90FDDAB6FC4E73DC19375D256310E /* CircularRevealTransitionDelegate.swift */; };
-		F98BA9569FC4C01478690251BA81C2BE /* CircularRevealTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169AC2078E83C26B970887B1D35DFFEF /* CircularRevealTransition.swift */; };
+		012CDDCB2FAA29A970C0FEB5DC54AD7F /* CircularRevealTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169AC2078E83C26B970887B1D35DFFEF /* CircularRevealTransition.swift */; };
+		467A4F3ACF93D9CAC8319B7066D84AD7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		5C1C22B586AAC06107FE896659BEC184 /* Pods-CircularRevealTransition_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F74659419E7E332DD0ED0448802A09F /* Pods-CircularRevealTransition_Tests-dummy.m */; };
+		6F62E44C20FD2DC8592447000AE9AF7C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		71D8E1DC749F4BC59B68E490DBC887DF /* Pods-CircularRevealTransition_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B4BCACEF241ACA67D5530670083BA44C /* Pods-CircularRevealTransition_Example-dummy.m */; };
+		8490F8B18FA511C29D50851ABF69E0F8 /* Pods-CircularRevealTransition_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 00016BB224D0B29870935482929549C2 /* Pods-CircularRevealTransition_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD9F5D3F9B6F65886E922DBFA287705F /* CircularRevealTransition-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FAD9FE30BE0550300B03F45BA4632D9 /* CircularRevealTransition-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF5624D35D54BFAFCB1ADA3C3931B52D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		DEA523E8C27835EC9050DAB081FD588B /* Pods-CircularRevealTransition_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2407A101833B20740C8FDA87272199FD /* Pods-CircularRevealTransition_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DED6BD8A5E6C75782787A7312E084EB4 /* CircularRevealTransition-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE7E8A50C4C25A1161BC7A68AA93B30 /* CircularRevealTransition-dummy.m */; };
+		F01BA10552446879BCB99C28E1B626E3 /* CircularRevealTransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C90FDDAB6FC4E73DC19375D256310E /* CircularRevealTransitionDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		38AAF4F870DD114B55EDC3901F888F3C /* PBXContainerItemProxy */ = {
+		F17BE7576323D4EDEEE6DF40A6458265 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 82B2E37A8D3D97A078C91589194031F7;
+			remoteGlobalIDString = F626AF0699D6079EB5F4CB75C7727F92;
 			remoteInfo = CircularRevealTransition;
 		};
 /* End PBXContainerItemProxy section */
@@ -37,28 +37,28 @@
 		14DBE8AEE0656D9864BA47476C85E24A /* CircularRevealTransition.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CircularRevealTransition.xcconfig; sourceTree = "<group>"; };
 		169AC2078E83C26B970887B1D35DFFEF /* CircularRevealTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CircularRevealTransition.swift; sourceTree = "<group>"; };
 		1FAD9FE30BE0550300B03F45BA4632D9 /* CircularRevealTransition-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CircularRevealTransition-umbrella.h"; sourceTree = "<group>"; };
-		235960A0E3E1AD9D679D699BAB25B679 /* CircularRevealTransition.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = CircularRevealTransition.modulemap; sourceTree = "<group>"; };
+		235960A0E3E1AD9D679D699BAB25B679 /* CircularRevealTransition.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = CircularRevealTransition.modulemap; sourceTree = "<group>"; };
 		2407A101833B20740C8FDA87272199FD /* Pods-CircularRevealTransition_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CircularRevealTransition_Tests-umbrella.h"; sourceTree = "<group>"; };
 		3C8BE486F3C6A9EEB9DC7ED34AAD213E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4146A97DD602D6F6622BFC78C1031595 /* Pods-CircularRevealTransition_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CircularRevealTransition_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		47470172D031C5790E67896CCBF99E3E /* Pods-CircularRevealTransition_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-CircularRevealTransition_Tests.modulemap"; sourceTree = "<group>"; };
-		5D6293C4890097C326AF3644E373F2C3 /* Pods_CircularRevealTransition_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CircularRevealTransition_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47470172D031C5790E67896CCBF99E3E /* Pods-CircularRevealTransition_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-CircularRevealTransition_Tests.modulemap"; sourceTree = "<group>"; };
+		5D6293C4890097C326AF3644E373F2C3 /* Pods_CircularRevealTransition_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CircularRevealTransition_Tests.framework; path = "Pods-CircularRevealTransition_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DEC650F01D7EFD6F137698C8C3E9F3E /* Pods-CircularRevealTransition_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CircularRevealTransition_Example-resources.sh"; sourceTree = "<group>"; };
-		7121E1F54836CD912A3E4EF82C8AAA8E /* CircularRevealTransition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CircularRevealTransition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7121E1F54836CD912A3E4EF82C8AAA8E /* CircularRevealTransition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CircularRevealTransition.framework; path = CircularRevealTransition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D870AFF743DD6C281D5DD6CEF18A235 /* Pods-CircularRevealTransition_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CircularRevealTransition_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		8F74659419E7E332DD0ED0448802A09F /* Pods-CircularRevealTransition_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CircularRevealTransition_Tests-dummy.m"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		94D733AE19EB8D943C0FF64E0CF4578E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94FC594478D73108B9CA1F66006E323A /* Pods-CircularRevealTransition_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CircularRevealTransition_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		B4BCACEF241ACA67D5530670083BA44C /* Pods-CircularRevealTransition_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CircularRevealTransition_Example-dummy.m"; sourceTree = "<group>"; };
 		B5E8627C47CF237C16031471B345C3DB /* Pods-CircularRevealTransition_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CircularRevealTransition_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B61F9124E419508558777CFDCCA671C4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B67274D3245CDC7E65612FF6934F96F6 /* Pods-CircularRevealTransition_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CircularRevealTransition_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		BE45606F169B227D4F9FBD7E1BDF4AE1 /* Pods-CircularRevealTransition_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-CircularRevealTransition_Example.modulemap"; sourceTree = "<group>"; };
-		C16D4954468E0C879067BFC531ACDDCB /* Pods_CircularRevealTransition_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CircularRevealTransition_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE45606F169B227D4F9FBD7E1BDF4AE1 /* Pods-CircularRevealTransition_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-CircularRevealTransition_Example.modulemap"; sourceTree = "<group>"; };
+		C16D4954468E0C879067BFC531ACDDCB /* Pods_CircularRevealTransition_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CircularRevealTransition_Example.framework; path = "Pods-CircularRevealTransition_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		CBBE12DE48B6127D5B1A1E6816871CDF /* Pods-CircularRevealTransition_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CircularRevealTransition_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		CDE7E8A50C4C25A1161BC7A68AA93B30 /* CircularRevealTransition-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CircularRevealTransition-dummy.m"; sourceTree = "<group>"; };
-		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D0C90FDDAB6FC4E73DC19375D256310E /* CircularRevealTransitionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CircularRevealTransitionDelegate.swift; sourceTree = "<group>"; };
 		E02CAC6599EC19ED49A42692333ED63B /* Pods-CircularRevealTransition_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CircularRevealTransition_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		E6E91243E0BBD4A024FB9B5037B36AAE /* CircularRevealTransition-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CircularRevealTransition-prefix.pch"; sourceTree = "<group>"; };
@@ -67,27 +67,27 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		606C5F419A9C4D1D29BD97F6539261AD /* Frameworks */ = {
+		1F769C26C19303B70312324705AA1C60 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91EA31ADD4AD91D43397055F590F844D /* Foundation.framework in Frameworks */,
+				CF5624D35D54BFAFCB1ADA3C3931B52D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		80695C56F8D97D835D91261481424EB4 /* Frameworks */ = {
+		3CAAE5D88F3402B00F22750262E89F35 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				387DAE51BE9BB4DBB6A752B60D7AF225 /* Foundation.framework in Frameworks */,
+				6F62E44C20FD2DC8592447000AE9AF7C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BFA613772B00DD61A80109C866CCAC9F /* Frameworks */ = {
+		E2C0504039AE05118C3F53E6D97783EF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				573F45E2A112BA2DEFBD2432D70484DD /* Foundation.framework in Frameworks */,
+				467A4F3ACF93D9CAC8319B7066D84AD7 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,15 +99,8 @@
 			children = (
 				BB33B91A2030FFA90E193E4F31D2EDE8 /* Classes */,
 			);
+			name = CircularRevealTransition;
 			path = CircularRevealTransition;
-			sourceTree = "<group>";
-		};
-		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 		4D88848518793987DAF466E5CC735C0A /* Targets Support Files */ = {
@@ -141,6 +134,14 @@
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/CircularRevealTransition";
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -186,13 +187,14 @@
 				169AC2078E83C26B970887B1D35DFFEF /* CircularRevealTransition.swift */,
 				D0C90FDDAB6FC4E73DC19375D256310E /* CircularRevealTransitionDelegate.swift */,
 			);
+			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -228,40 +230,58 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		6A68C954C95AAC437BCAD56FCEA3CCE0 /* Headers */ = {
+		858BF62FFF9A998D7559F1368839B356 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9EABBE7EB28454CB9FB7AAF90FD6B854 /* Pods-CircularRevealTransition_Tests-umbrella.h in Headers */,
+				8490F8B18FA511C29D50851ABF69E0F8 /* Pods-CircularRevealTransition_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6AE67B30E1189FA22BD2F9C00F132488 /* Headers */ = {
+		C85BF5553235F5525F8F3F121068811A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36C255E7B406BDD5A1A56FEDF0BD230F /* Pods-CircularRevealTransition_Example-umbrella.h in Headers */,
+				DEA523E8C27835EC9050DAB081FD588B /* Pods-CircularRevealTransition_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		770C7A1D7408FF64B54954076E9AA32F /* Headers */ = {
+		D2F96EFFE8AD819B7C8B960E1CECFFD7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A0B97A42EBF3A8ECD3BDD8AACDA1EA9 /* CircularRevealTransition-umbrella.h in Headers */,
+				CD9F5D3F9B6F65886E922DBFA287705F /* CircularRevealTransition-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		5D4AF72F844179B2AEA1DA3845FD45E0 /* Pods-CircularRevealTransition_Tests */ = {
+		5E15E3BEED8E373F43973A433EEF21A3 /* Pods-CircularRevealTransition_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3B5A205C7C88BE36CB743E0399E1D535 /* Build configuration list for PBXNativeTarget "Pods-CircularRevealTransition_Tests" */;
+			buildConfigurationList = 21160E049185D680A09DE46526468C20 /* Build configuration list for PBXNativeTarget "Pods-CircularRevealTransition_Example" */;
 			buildPhases = (
-				48D7C6F27BECEB021B2BE654C9EDEDF1 /* Sources */,
-				BFA613772B00DD61A80109C866CCAC9F /* Frameworks */,
-				6A68C954C95AAC437BCAD56FCEA3CCE0 /* Headers */,
+				5DA49C8E077D216CD0B5B2D665122128 /* Sources */,
+				E2C0504039AE05118C3F53E6D97783EF /* Frameworks */,
+				858BF62FFF9A998D7559F1368839B356 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1B70761FA04915129ADE6E14A24F7457 /* PBXTargetDependency */,
+			);
+			name = "Pods-CircularRevealTransition_Example";
+			productName = "Pods-CircularRevealTransition_Example";
+			productReference = C16D4954468E0C879067BFC531ACDDCB /* Pods_CircularRevealTransition_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8796C311985CCCF83CF31C6E38038929 /* Pods-CircularRevealTransition_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B675ABAF1E51E1B3C05FDF6F41B2D08 /* Build configuration list for PBXNativeTarget "Pods-CircularRevealTransition_Tests" */;
+			buildPhases = (
+				8EF769BFC6078A26F8629E73ACC49029 /* Sources */,
+				3CAAE5D88F3402B00F22750262E89F35 /* Frameworks */,
+				C85BF5553235F5525F8F3F121068811A /* Headers */,
 			);
 			buildRules = (
 			);
@@ -272,13 +292,13 @@
 			productReference = 5D6293C4890097C326AF3644E373F2C3 /* Pods_CircularRevealTransition_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		82B2E37A8D3D97A078C91589194031F7 /* CircularRevealTransition */ = {
+		F626AF0699D6079EB5F4CB75C7727F92 /* CircularRevealTransition */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AED3D517644190711E8709645D79E3E4 /* Build configuration list for PBXNativeTarget "CircularRevealTransition" */;
+			buildConfigurationList = 53929068972E8B4AE601C23B3D1140C3 /* Build configuration list for PBXNativeTarget "CircularRevealTransition" */;
 			buildPhases = (
-				0FBE9E94F4CE7CDC4B3FB326085C2559 /* Sources */,
-				606C5F419A9C4D1D29BD97F6539261AD /* Frameworks */,
-				770C7A1D7408FF64B54954076E9AA32F /* Headers */,
+				E4F9B19B272A36A40A174DA332547329 /* Sources */,
+				1F769C26C19303B70312324705AA1C60 /* Frameworks */,
+				D2F96EFFE8AD819B7C8B960E1CECFFD7 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -289,24 +309,6 @@
 			productReference = 7121E1F54836CD912A3E4EF82C8AAA8E /* CircularRevealTransition.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		E09883A63276016D0385972326671146 /* Pods-CircularRevealTransition_Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1C6D2DEA5D223FDFE12C596CFB586C5C /* Build configuration list for PBXNativeTarget "Pods-CircularRevealTransition_Example" */;
-			buildPhases = (
-				B5D39E059C9B4CEDBAD0F62D61F64692 /* Sources */,
-				80695C56F8D97D835D91261481424EB4 /* Frameworks */,
-				6AE67B30E1189FA22BD2F9C00F132488 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AD0583070DD11CDB0860BD072F20D88F /* PBXTargetDependency */,
-			);
-			name = "Pods-CircularRevealTransition_Example";
-			productName = "Pods-CircularRevealTransition_Example";
-			productReference = C16D4954468E0C879067BFC531ACDDCB /* Pods_CircularRevealTransition_Example.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -315,17 +317,6 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
-				TargetAttributes = {
-					5D4AF72F844179B2AEA1DA3845FD45E0 = {
-						LastSwiftMigration = 0820;
-					};
-					82B2E37A8D3D97A078C91589194031F7 = {
-						LastSwiftMigration = 0820;
-					};
-					E09883A63276016D0385972326671146 = {
-						LastSwiftMigration = 0820;
-					};
-				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -339,125 +330,59 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				82B2E37A8D3D97A078C91589194031F7 /* CircularRevealTransition */,
-				E09883A63276016D0385972326671146 /* Pods-CircularRevealTransition_Example */,
-				5D4AF72F844179B2AEA1DA3845FD45E0 /* Pods-CircularRevealTransition_Tests */,
+				F626AF0699D6079EB5F4CB75C7727F92 /* CircularRevealTransition */,
+				5E15E3BEED8E373F43973A433EEF21A3 /* Pods-CircularRevealTransition_Example */,
+				8796C311985CCCF83CF31C6E38038929 /* Pods-CircularRevealTransition_Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0FBE9E94F4CE7CDC4B3FB326085C2559 /* Sources */ = {
+		5DA49C8E077D216CD0B5B2D665122128 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5113CAED0C8B6D097BBA27524030D69E /* CircularRevealTransition-dummy.m in Sources */,
-				F98BA9569FC4C01478690251BA81C2BE /* CircularRevealTransition.swift in Sources */,
-				B9CD7068FCC9FA67BFBED3CD6C69A67E /* CircularRevealTransitionDelegate.swift in Sources */,
+				71D8E1DC749F4BC59B68E490DBC887DF /* Pods-CircularRevealTransition_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		48D7C6F27BECEB021B2BE654C9EDEDF1 /* Sources */ = {
+		8EF769BFC6078A26F8629E73ACC49029 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				739AD385AD9B02A339FA5BF9CAF245B5 /* Pods-CircularRevealTransition_Tests-dummy.m in Sources */,
+				5C1C22B586AAC06107FE896659BEC184 /* Pods-CircularRevealTransition_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B5D39E059C9B4CEDBAD0F62D61F64692 /* Sources */ = {
+		E4F9B19B272A36A40A174DA332547329 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83CA55B821B4ED81693E8FD75E2150EC /* Pods-CircularRevealTransition_Example-dummy.m in Sources */,
+				DED6BD8A5E6C75782787A7312E084EB4 /* CircularRevealTransition-dummy.m in Sources */,
+				012CDDCB2FAA29A970C0FEB5DC54AD7F /* CircularRevealTransition.swift in Sources */,
+				F01BA10552446879BCB99C28E1B626E3 /* CircularRevealTransitionDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		AD0583070DD11CDB0860BD072F20D88F /* PBXTargetDependency */ = {
+		1B70761FA04915129ADE6E14A24F7457 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CircularRevealTransition;
-			target = 82B2E37A8D3D97A078C91589194031F7 /* CircularRevealTransition */;
-			targetProxy = 38AAF4F870DD114B55EDC3901F888F3C /* PBXContainerItemProxy */;
+			target = F626AF0699D6079EB5F4CB75C7727F92 /* CircularRevealTransition */;
+			targetProxy = F17BE7576323D4EDEEE6DF40A6458265 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		083BAF8131C9315CEA424D6F3C86FCB0 /* Release */ = {
+		0120A1DAAE04BFF0FC520AD92F0F8C9C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 14DBE8AEE0656D9864BA47476C85E24A /* CircularRevealTransition.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/CircularRevealTransition/CircularRevealTransition-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CircularRevealTransition/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/CircularRevealTransition/CircularRevealTransition.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = CircularRevealTransition;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		2CC651915CC96B0104AD7542669429F6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 14DBE8AEE0656D9864BA47476C85E24A /* CircularRevealTransition.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
@@ -469,7 +394,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/CircularRevealTransition/CircularRevealTransition-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/CircularRevealTransition/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/CircularRevealTransition/CircularRevealTransition.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -484,79 +409,13 @@
 			};
 			name = Debug;
 		};
-		5EAF267B55ACE2B9A71F48C3B0A13046 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FD30F03EAC19A1D1B89C1F6186E549FA /* Pods-CircularRevealTransition_Example.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-CircularRevealTransition_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-CircularRevealTransition_Example/Pods-CircularRevealTransition_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_CircularRevealTransition_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		5F4A13F8126BF0E010C35057B9D35928 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B67274D3245CDC7E65612FF6934F96F6 /* Pods-CircularRevealTransition_Tests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-CircularRevealTransition_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-CircularRevealTransition_Tests/Pods-CircularRevealTransition_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_CircularRevealTransition_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		AC7EC38C18AC20117A63FB5C3292FFD6 /* Debug */ = {
+		2E30844A2B64FA3BE97791D7550A34C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 94FC594478D73108B9CA1F66006E323A /* Pods-CircularRevealTransition_Tests.debug.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
@@ -567,7 +426,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-CircularRevealTransition_Tests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-CircularRevealTransition_Tests/Pods-CircularRevealTransition_Tests.modulemap";
@@ -579,49 +438,13 @@
 				PRODUCT_NAME = Pods_CircularRevealTransition_Tests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		C83F7213DF7B0DDEF8EC2CF09A09F1A5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4146A97DD602D6F6622BFC78C1031595 /* Pods-CircularRevealTransition_Example.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-CircularRevealTransition_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-CircularRevealTransition_Example/Pods-CircularRevealTransition_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_CircularRevealTransition_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */ = {
+		59B042A655B7C20CBAB90E385BF4E4C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -639,6 +462,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -656,21 +480,209 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
+		5C3E652A70EF9A24A717C68421CD279C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4146A97DD602D6F6622BFC78C1031595 /* Pods-CircularRevealTransition_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-CircularRevealTransition_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CircularRevealTransition_Example/Pods-CircularRevealTransition_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_CircularRevealTransition_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		64BE511043B0F323D7DBC5E343C30FF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B67274D3245CDC7E65612FF6934F96F6 /* Pods-CircularRevealTransition_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-CircularRevealTransition_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CircularRevealTransition_Tests/Pods-CircularRevealTransition_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_CircularRevealTransition_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A326CF5417E788E973405DB56942D91C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14DBE8AEE0656D9864BA47476C85E24A /* CircularRevealTransition.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CircularRevealTransition/CircularRevealTransition-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CircularRevealTransition/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CircularRevealTransition/CircularRevealTransition.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = CircularRevealTransition;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B7324857C38B065FEB1EEE3105C2367A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE7024C1721B400B776D3115CC8A0A7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD30F03EAC19A1D1B89C1F6186E549FA /* Pods-CircularRevealTransition_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-CircularRevealTransition_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CircularRevealTransition_Example/Pods-CircularRevealTransition_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_CircularRevealTransition_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1C6D2DEA5D223FDFE12C596CFB586C5C /* Build configuration list for PBXNativeTarget "Pods-CircularRevealTransition_Example" */ = {
+		0B675ABAF1E51E1B3C05FDF6F41B2D08 /* Build configuration list for PBXNativeTarget "Pods-CircularRevealTransition_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C83F7213DF7B0DDEF8EC2CF09A09F1A5 /* Debug */,
-				5EAF267B55ACE2B9A71F48C3B0A13046 /* Release */,
+				2E30844A2B64FA3BE97791D7550A34C0 /* Debug */,
+				64BE511043B0F323D7DBC5E343C30FF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21160E049185D680A09DE46526468C20 /* Build configuration list for PBXNativeTarget "Pods-CircularRevealTransition_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C3E652A70EF9A24A717C68421CD279C /* Debug */,
+				EE7024C1721B400B776D3115CC8A0A7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -678,26 +690,17 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */,
-				0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */,
+				59B042A655B7C20CBAB90E385BF4E4C7 /* Debug */,
+				B7324857C38B065FEB1EEE3105C2367A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3B5A205C7C88BE36CB743E0399E1D535 /* Build configuration list for PBXNativeTarget "Pods-CircularRevealTransition_Tests" */ = {
+		53929068972E8B4AE601C23B3D1140C3 /* Build configuration list for PBXNativeTarget "CircularRevealTransition" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AC7EC38C18AC20117A63FB5C3292FFD6 /* Debug */,
-				5F4A13F8126BF0E010C35057B9D35928 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AED3D517644190711E8709645D79E3E4 /* Build configuration list for PBXNativeTarget "CircularRevealTransition" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2CC651915CC96B0104AD7542669429F6 /* Debug */,
-				083BAF8131C9315CEA424D6F3C86FCB0 /* Release */,
+				0120A1DAAE04BFF0FC520AD92F0F8C9C /* Debug */,
+				A326CF5417E788E973405DB56942D91C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
