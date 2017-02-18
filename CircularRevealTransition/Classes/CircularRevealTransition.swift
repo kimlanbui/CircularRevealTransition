@@ -8,6 +8,57 @@
 
 import UIKit
 
+open class CircularRevealAnimation {
+    let startPoint : CGPoint
+    let endFrame : CGRect
+    let maskLayer : CAShapeLayer
+    let startPath : UIBezierPath
+    let endPath : UIBezierPath
+    
+    public init(from point: CGPoint, to frame: CGRect) {
+        startPoint = point
+        endFrame = frame
+        
+        let radius = sqrt(endFrame.width * endFrame.width + endFrame.height * endFrame.height) / 2
+        
+        startPath = UIBezierPath(arcCenter: startPoint, radius: 1, startAngle: 0, endAngle: 360, clockwise: true)
+        endPath = UIBezierPath(arcCenter: CGPoint(x: endFrame.width / 2, y: endFrame.height / 2), radius: radius, startAngle: 0, endAngle: 360, clockwise: true)
+        
+        let layer = CAShapeLayer()
+        layer.path = startPath.cgPath
+        layer.frame = endFrame
+        
+        maskLayer = layer
+    }
+    
+    public func shape() -> CAShapeLayer {
+        return maskLayer
+    }
+    
+    public func commit(duration: TimeInterval, expand isExpanding: Bool, completionBlock block: (() -> Void)?) {
+        CATransaction.begin()
+        CATransaction.setCompletionBlock(block)
+        
+        let pathAnimation = CABasicAnimation(keyPath: "path")
+        pathAnimation.duration = duration
+        
+        if isExpanding {
+            pathAnimation.fromValue = startPath.cgPath
+            pathAnimation.toValue = endPath.cgPath
+            maskLayer.path = endPath.cgPath
+        }
+        else {
+            pathAnimation.fromValue = endPath.cgPath
+            pathAnimation.toValue = startPath.cgPath
+            maskLayer.path = startPath.cgPath
+        }
+        
+        maskLayer.add(pathAnimation, forKey: "circularRevealAnimation")
+        
+        CATransaction.commit()
+    }
+}
+
 open class CircularRevealTransition : NSObject {
     
     var transitionContext : UIViewControllerContextTransitioning?
@@ -48,14 +99,10 @@ extension CircularRevealTransition : UIViewControllerAnimatedTransitioning {
         
         
         let toViewFrame = toViewController.view.frame
-        let radius = sqrt(toViewFrame.width * toViewFrame.width + toViewFrame.height * toViewFrame.height)
+        let startingPoint = CGPoint(x: sourceFrame.minX + sourceFrame.width / 2, y: sourceFrame.minY + sourceFrame.height / 2)
         
-        let startPath = UIBezierPath(arcCenter: CGPoint(x: sourceFrame.minX + sourceFrame.width / 2, y: sourceFrame.minY + sourceFrame.height / 2), radius: 1, startAngle: 0, endAngle: 360, clockwise: true)
-        let endPath = UIBezierPath(arcCenter: CGPoint(x: toViewFrame.width / 2, y: toViewFrame.height / 2), radius: radius / 2, startAngle: 0, endAngle: 360, clockwise: true)
-        
-        let maskLayer = CAShapeLayer()
-        maskLayer.path = startPath.cgPath
-        maskLayer.frame = toViewController.view.frame
+        let animation = CircularRevealAnimation(from: startingPoint, to: toViewFrame)
+        let maskLayer = animation.shape()
         
         if isExpanding {
             toViewController.view.layer.mask = maskLayer
@@ -64,31 +111,13 @@ extension CircularRevealTransition : UIViewControllerAnimatedTransitioning {
             fromViewController.view.layer.mask = maskLayer
         }
         
-        // create the animation
-        CATransaction.begin()
-        CATransaction.setCompletionBlock({
+        animation.commit(duration: transitionDuration(using: transitionContext),
+                         expand:  isExpanding,
+                         completionBlock: {
             fromViewController.view.removeFromSuperview()
             transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
             transitionContext.viewController(forKey: UITransitionContextViewControllerKey.from)!.view.layer.mask = nil
             transitionContext.viewController(forKey: UITransitionContextViewControllerKey.to)!.view.layer.mask = nil
         })
-        
-        let pathAnimation = CABasicAnimation(keyPath: "path")
-        pathAnimation.duration = transitionDuration(using: transitionContext)
-        
-        if isExpanding {
-            pathAnimation.fromValue = startPath.cgPath
-            pathAnimation.toValue = endPath.cgPath
-            maskLayer.path = endPath.cgPath
-        }
-        else {
-            pathAnimation.fromValue = endPath.cgPath
-            pathAnimation.toValue = startPath.cgPath
-            maskLayer.path = startPath.cgPath
-        }
-        
-        maskLayer.add(pathAnimation, forKey: "circularRevealAnimation")
-        
-        CATransaction.commit()
     }
 }

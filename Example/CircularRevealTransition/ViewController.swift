@@ -28,7 +28,6 @@ class ViewController : UIViewController {
         transitionDelegate = CircularRevealTransitionDelegate(frame: button.frame)
         let destinationController = segue.destination
         destinationController.transitioningDelegate = transitionDelegate
-        // destinationController.modalPresentationStyle = UIModalPresentationStyle.FullScreen
     }
     
     @IBAction func unwindFromView(_ segue: UIStoryboardSegue) {}
@@ -46,14 +45,6 @@ class BlueViewController : UIViewController {
         transitionDelegate = CircularRevealTransitionDelegate(frame: sender.frame)
         transitioningDelegate = transitionDelegate
         dismiss(animated: true, completion: nil)
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
     }
     
 }

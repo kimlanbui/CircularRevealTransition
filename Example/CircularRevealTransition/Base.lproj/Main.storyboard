@@ -1,11 +1,14 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="s6C-z7-Jw6">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Segue-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="CircularRevealTransition_Example" customModuleProvider="target" sceneMemberID="viewController">
@@ -14,37 +17,39 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oZi-bp-ifK">
-                                <rect key="frame" x="185" y="280" width="230" height="40"/>
+                                <rect key="frame" x="72.5" y="313.5" width="230" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="YaK-I4-n3O"/>
                                     <constraint firstAttribute="width" constant="230" id="oRK-Bz-fYk"/>
                                 </constraints>
                                 <state key="normal" title="Start Circular Reveal Transition">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="Rcy-t3-l8D" kind="presentation" id="NoN-5p-014"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.0027333229980000002" green="0.48598786579999997" blue="0.40903530100000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.0027333229980000002" green="0.48598786579999997" blue="0.40903530100000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="oZi-bp-ifK" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="OJd-mt-tHj"/>
                             <constraint firstItem="oZi-bp-ifK" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Vlg-No-Vbk"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Segue" id="Smb-FC-Fjl"/>
                     <navigationItem key="navigationItem" id="h2R-5A-m4L"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="button" destination="oZi-bp-ifK" id="JGY-fv-C5o"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="325" y="366"/>
+            <point key="canvasLocation" x="462" y="-2"/>
         </scene>
         <!--Blue View Controller-->
         <scene sceneID="8iI-RU-oFC">
@@ -55,17 +60,17 @@
                         <viewControllerLayoutGuide type="bottom" id="kVh-Jl-zv0"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Qed-lK-3SE">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zla-im-WEZ">
-                                <rect key="frame" x="277" y="280" width="46" height="40"/>
+                                <rect key="frame" x="164.5" y="313.5" width="46" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="5qh-pN-gVl"/>
                                     <constraint firstAttribute="width" constant="46" id="kOg-JL-U5u"/>
                                 </constraints>
                                 <state key="normal" title="Back">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="didTapButton:" destination="Rcy-t3-l8D" eventType="touchUpInside" id="4BK-Hf-LWF"/>
@@ -73,7 +78,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.35380278408827126" blue="0.74575836489898983" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.35380278408827126" blue="0.74575836489898983" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Zla-im-WEZ" firstAttribute="centerX" secondItem="Qed-lK-3SE" secondAttribute="centerX" id="SbU-V8-dln"/>
                             <constraint firstItem="Zla-im-WEZ" firstAttribute="centerY" secondItem="Qed-lK-3SE" secondAttribute="centerY" id="gt9-JZ-DeP"/>
@@ -83,7 +88,88 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oPh-Au-oyB" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="biO-yo-35E" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1091" y="366"/>
+            <point key="canvasLocation" x="1366" y="-2"/>
+        </scene>
+        <!--View based-->
+        <scene sceneID="nVu-jr-mpK">
+            <objects>
+                <viewController id="Xgz-4Q-R5h" customClass="ViewBasedAnimationController" customModule="CircularRevealTransition_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bDL-bc-J4C"/>
+                        <viewControllerLayoutGuide type="bottom" id="05K-tC-IHh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0ck-Ed-DMg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZDP-Rh-1Pn">
+                                <rect key="frame" x="37.5" y="233.5" width="300" height="200"/>
+                                <color key="backgroundColor" red="0.0027333229980000002" green="0.48598786579999997" blue="0.40903530100000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="CuT-37-Exq"/>
+                                    <constraint firstAttribute="width" constant="300" id="DzN-E7-C24"/>
+                                </constraints>
+                            </view>
+                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M6h-Nh-SXx">
+                                <rect key="frame" x="37" y="233" width="300" height="200"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="1he-VJ-8ov"/>
+                                    <constraint firstAttribute="width" constant="300" id="PmA-XV-FnF"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="TgN-fv-Eor"/>
+                                    <constraint firstAttribute="height" constant="200" id="cAT-T5-7Tq"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="has-WP-Ujy">
+                                <rect key="frame" x="112" y="144" width="150" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="l9d-Ok-zcK"/>
+                                    <constraint firstAttribute="width" constant="150" id="pAP-SW-dCx"/>
+                                </constraints>
+                                <state key="normal" title="Start Animation"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="Xgz-4Q-R5h" eventType="touchUpInside" id="MgB-SH-7AV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="M6h-Nh-SXx" firstAttribute="centerY" secondItem="0ck-Ed-DMg" secondAttribute="centerY" id="BmX-b5-eba"/>
+                            <constraint firstItem="ZDP-Rh-1Pn" firstAttribute="centerY" secondItem="0ck-Ed-DMg" secondAttribute="centerY" id="KJi-5g-CCI"/>
+                            <constraint firstItem="M6h-Nh-SXx" firstAttribute="centerX" secondItem="0ck-Ed-DMg" secondAttribute="centerX" id="UKw-0q-oYG"/>
+                            <constraint firstItem="ZDP-Rh-1Pn" firstAttribute="centerX" secondItem="0ck-Ed-DMg" secondAttribute="centerX" id="UjP-Tr-pfY"/>
+                            <constraint firstItem="ZDP-Rh-1Pn" firstAttribute="top" secondItem="has-WP-Ujy" secondAttribute="bottom" constant="49.5" id="Wlq-lt-qzc"/>
+                            <constraint firstItem="has-WP-Ujy" firstAttribute="centerX" secondItem="0ck-Ed-DMg" secondAttribute="centerX" id="XRh-RW-ekw"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="View based" id="M5G-cp-ALB"/>
+                    <connections>
+                        <outlet property="button" destination="has-WP-Ujy" id="ugE-dQ-7Tl"/>
+                        <outlet property="fromView" destination="ZDP-Rh-1Pn" id="m5G-iy-lrD"/>
+                        <outlet property="toView" destination="M6h-Nh-SXx" id="afJ-bJ-DJm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l3k-bm-Gz6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="461.60000000000002" y="710.19490254872574"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="hJL-WQ-hM3">
+            <objects>
+                <tabBarController id="s6C-z7-Jw6" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="2Jc-9m-9m1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Xgz-4Q-R5h" kind="relationship" relationship="viewControllers" id="pcA-BS-KyC"/>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="viewControllers" id="q2g-wk-Ew0"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aEy-PM-PbE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-786" y="379"/>
         </scene>
     </scenes>
 </document>
