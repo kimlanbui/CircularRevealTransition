@@ -1,5 +1,5 @@
 PODS:
-  - CircularRevealTransition (1.0.2)
+  - CircularRevealTransition (2.0.0)
 
 DEPENDENCIES:
   - CircularRevealTransition (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  CircularRevealTransition: c095165c04233bf77ec97de581de8ee9fa6aef7b
+  CircularRevealTransition: eac5aed0989f269a2ef0ae707cf94a7ebd6b9956
 
 PODFILE CHECKSUM: fe6a3920e01fcd469a800303aa4c21a91860fb53
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.2.0

@@ -19,10 +19,10 @@ open class CircularRevealAnimation {
         startPoint = point
         endFrame = frame
         
-        let radius = sqrt(endFrame.width * endFrame.width + endFrame.height * endFrame.height)
+        let radius = sqrt(endFrame.width * endFrame.width + endFrame.height * endFrame.height) / 2
         
         startPath = UIBezierPath(arcCenter: startPoint, radius: 1, startAngle: 0, endAngle: 360, clockwise: true)
-        endPath = UIBezierPath(arcCenter: CGPoint(x: endFrame.width / 2, y: endFrame.height / 2), radius: radius / 2, startAngle: 0, endAngle: 360, clockwise: true)
+        endPath = UIBezierPath(arcCenter: CGPoint(x: endFrame.width / 2, y: endFrame.height / 2), radius: radius, startAngle: 0, endAngle: 360, clockwise: true)
         
         let layer = CAShapeLayer()
         layer.path = startPath.cgPath

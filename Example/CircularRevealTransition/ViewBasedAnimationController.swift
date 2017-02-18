@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CircularRevealTransition
 
 class ViewBasedAnimationController : UIViewController {
     @IBOutlet var button: UIButton!
@@ -18,7 +19,12 @@ class ViewBasedAnimationController : UIViewController {
     }
     
     func startAnimation() {
-        
+        let animation = CircularRevealAnimation(from: CGPoint(x: fromView.bounds.width / 2, y: fromView.bounds.height / 2), to: toView.bounds)
+        toView.layer.mask = animation.shape()
+        toView.alpha = 1
+        animation.commit(duration: 0.3, expand: true, completionBlock: {
+            self.toView.layer.mask = nil
+        })
     }
     
     
