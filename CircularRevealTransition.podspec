@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CircularRevealTransition'
-  s.version          = '2.1.0'
+  s.version          = '2.2.0'
   s.summary          = 'Provides a circular reveal transition between view controllers.'
   s.description      = <<-DESC
 A Swift library to provide a circular reveal transition between view controllers.
